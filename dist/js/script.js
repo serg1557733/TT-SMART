@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const closeElem = document.querySelector('.menu__close');
 const olerlay = document.querySelector('.menu__overlay');
+const logIn = document.querySelector('.header__link');
 
 hamburger.addEventListener('click',() => {
     menu.classList.add('active')
@@ -14,4 +15,8 @@ closeElem.addEventListener('click',() => {
     menu.classList.remove('active')
     hamburger.classList.remove('hamburger_active')
     olerlay.classList.remove('menu__overlay_active')
+});
+
+logIn.addEventListener('click', ()=>{
+    olerlay.classList.add('menu__overlay_active')
 });
