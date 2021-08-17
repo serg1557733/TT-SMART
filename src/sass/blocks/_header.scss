@@ -1,0 +1,69 @@
+.header { 
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 31px 0 240px 0 ;
+    background: url('../../img/main_image.png') no-repeat 100% / cover; 
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 292px;
+    }
+    &__nav ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        li{
+            padding-right: 30px;
+        }
+    } 
+    &__link a {
+        text-decoration: none;
+        text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+        font-family: Lato;
+        font-size: 14px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.14;
+        letter-spacing: 0.7px;
+        text-align: left;
+        color: #fff;
+    }&__nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    &__content {
+        text-align: center;
+        h1 {
+            text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+            font-family: Lato;
+            font-size: 100px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: 5px;
+            color: #fff;
+            margin-bottom: 41px;
+        }
+        h2 {
+            text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+            font-family: TimesNewRomanPS-MT;
+            font-size: 36px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: italic;
+            letter-spacing: 1.8px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        h4 {
+            text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+            font-family: Lato;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: 0.7px;
+            color: #fff;
+        }
+    }
+}
