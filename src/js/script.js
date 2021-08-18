@@ -29,4 +29,17 @@ closeElemLog.addEventListener('click',() => {
     formLogin.classList.remove('form__login_active')
     olerlay.classList.remove('menu__overlay_active')
 });
+//sign in
+const sign = document.querySelector('.sign');
+const formSign = document.querySelector('.form__sign');
+const closeElemSign = document.querySelector('.menu__close_sign');
+
+sign.addEventListener('click', ()=>{
+    formSign.classList.add('form__sign_active')
+    olerlay.classList.add('menu__overlay_active')
+});
+closeElemSign.addEventListener('click',() => {
+    formSign.classList.remove('form__sign_active')
+    olerlay.classList.remove('menu__overlay_active')
+});
 
