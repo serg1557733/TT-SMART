@@ -1,6 +1,50 @@
-.menu {
+.food {
     min-height: 790px;
-    width: 100%;
+    text-align: center;
+    padding: 99px 2px 60px 2px;
+    h3 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(5, 300px );
+        grid-template-rows: repeat(2, 225px);
+        
+    }
+    &__item {
+        padding: 76px 0 99px 0;
+        text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+        font-size: 36px;
+        line-height: 0.36;
+        letter-spacing: 1.8px;
+        //background-image: url('../../img/spagetti.png');
+        &:hover {
+            transform: scale(1.1);
+            transition: .8s all;
+            cursor: pointer;
+            }
+        a {
+            display: block;
+            text-decoration: none;
+            color:white;
+            padding-top: 16px;
+            padding-bottom: 20px;
+            }
+        span {
+            opacity: 0.9;
+            text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+            font-family: TimesNewRomanPS-MT;
+            font-size: 15.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: italic;
+            line-height: 0.84;
+            letter-spacing: 0.78px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
 
 
 }
