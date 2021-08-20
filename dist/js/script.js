@@ -1,5 +1,5 @@
 //const { create } = require("browser-sync");
-
+window.addEventListener('DOMContentLoaded', function() {
 //hamburger menu activation classes
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
@@ -66,4 +66,42 @@ for (let i=0; i<=9; i++) {
 };
 
 
-//
+//counter
+
+let counters = document.querySelectorAll('.counter__span');
+const speed = 10;//ms
+
+
+
+
+function timer(num, coun) {
+    let n = 0;
+    let step = parseFloat(coun.getAttribute('data-max'));
+    let t =speed / (num/step);
+    let interval = setInterval(() => {
+        n =n + step;
+        if (n == num ) {
+            coun.innerText = coun.getAttribute('data-max');
+        }
+        coun.innerHTML = n;
+        setTimeout(() => {
+            clearInterval(interval); 
+            coun.innerText = coun.getAttribute('data-max');
+                    }, step*4);
+        });  
+       
+ };    
+    
+ 
+
+
+
+function showByScroll() {
+    if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {counters.forEach(item => timer(parseFloat(item.getAttribute('data-max')), item ));
+
+    }
+}
+window.addEventListener('scroll', showByScroll);
+
+
+});
