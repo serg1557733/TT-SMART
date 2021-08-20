@@ -2,6 +2,7 @@
     min-height: 790px;
     text-align: center;
     padding: 99px 2px 60px 2px;
+
     h3 {
         margin: 0;
         margin-bottom: 10px;
@@ -10,6 +11,7 @@
         display: grid;
         grid-template-columns: repeat(5, 300px );
         grid-template-rows: repeat(2, 225px);
+        grid-auto-flow: dense;
         
     }
     &__item {

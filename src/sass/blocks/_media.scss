@@ -1,0 +1,46 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .form {
+        padding: 35px 40px 40px 40px;
+        width: 400px;
+        min-height: 250px;
+        &__input {
+            margin-bottom: 5px;
+            & input {
+                width: 80%;
+                height: 5%;
+            }
+        }
+        & h4 {
+            font-size: 18px;
+            letter-spacing: 0.8px;
+        }
+        & span, a {
+            font-size: 12px;
+        }
+    }
+    .btn {
+        &_log {
+            width: 80%;
+            height: 50px;
+            h4 {
+                margin: 0;
+            }
+        }
+    }
+    .food {
+        &__items {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+}

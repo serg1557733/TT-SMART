@@ -69,32 +69,29 @@ for (let i=0; i<=9; i++) {
 //counter
 
 let counters = document.querySelectorAll('.counter__span');
-const speed = 10;//ms
-
-
 
 
 function timer(num, coun) {
     let n = 0;
     let step = parseFloat(coun.getAttribute('data-max'));
-    let t =speed / (num/step);
     let interval = setInterval(() => {
-        n =n + step;
+        n = n + step;
         if (n == num ) {
             coun.innerText = coun.getAttribute('data-max');
+            console.log(step)
         }
         coun.innerHTML = n;
         setTimeout(() => {
             clearInterval(interval); 
             coun.innerText = coun.getAttribute('data-max');
-                    }, step*4);
+                    }, step);
         });  
        
  };    
     
  
 
-
+//scroll eventlistener
 
 function showByScroll() {
     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {counters.forEach(item => timer(parseFloat(item.getAttribute('data-max')), item ));
