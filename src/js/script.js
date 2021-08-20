@@ -46,7 +46,7 @@ closeElemSign.addEventListener('click',() => {
 });
 
 
-//dynamic js create food elements (simple)
+//dynamic js create food elements (without test, simple rel)
 const foodItem = document.querySelector('.food__items');
 console.log(foodItem);
 
@@ -64,3 +64,6 @@ for (let i=0; i<=9; i++) {
         foodItem.append(div) 
     
 };
+
+
+//

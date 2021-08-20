@@ -1,0 +1,24 @@
+.counter {
+    padding-top: 59px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 0.83;
+        letter-spacing: 1.8px;
+        color: #000;
+    }
+    &__desc {
+        padding-top: 12px;
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.13;
+        letter-spacing: 0.8px;
+        color: rgba(139, 139, 139, 0.5);;
+    }
+
+}

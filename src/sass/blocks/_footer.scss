@@ -1,0 +1,27 @@
+.footer {
+    min-height: 93px;
+    padding: 42px 0 38px 0;
+    background-color: #f7f7f7;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        span {
+            display: block;
+            opacity: 0.5;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: normal;
+            text-align: left;
+            color: rgba(124, 114, 114, 0.5);
+            &:last-child {
+                 letter-spacing: 2px;
+            }
+            a {
+                text-decoration: none;
+                letter-spacing: 2px;
+                font-weight: 700;
+                color: #000;
+            }
+        }
+    }
+}
