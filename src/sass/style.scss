@@ -11,7 +11,7 @@ html {
     box-sizing: inherit;
 }
 .container {
-    width: 1150px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 @import 'base/button';

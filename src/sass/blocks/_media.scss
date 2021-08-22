@@ -1,6 +1,8 @@
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .form {
         padding: 35px 40px 40px 40px;
@@ -31,16 +33,259 @@
         }
     }
     .food {
+        padding:20px;
         &__items {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3,1fr);
+            gap:5px;
+        }
+    }
+    .app {  
+        height: 821px;
+        padding-top: 82px;
+        padding-left: 20px;
+        &__item {
+            margin-right: 75px;
+            h3 {
+                font-size: 17px;
+                line-height: 1.37;
+                letter-spacing: 0.6px;
+                
+            }
+            p {
+                margin: 0;
+                margin-bottom: 29px;
+            }
+            a {
+                margin-right: 10px;
+            }
+        }
+    }
+    .review {
+        padding: 74px 5px 71px 5px;
+        &__text {
+            font-size: 24px;
+            span {
+              font-size: 14px;
+            }
         }
     }
 }
 
 @media (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 760px;
+    }
+    .header {
+        padding: 25px 15px 100px 0;
+        &__top {
+        margin-bottom: 100px;  
+        justify-content: space-evenly;
+        }
+        h1 {
+            font-size: 55px;
+        }
+    }
+    .app {
+        padding: 70px 10px 20px 10px;
+        max-height: 520px;
+        &__item {
+            margin-right: 10px;
+            img {
+                width: 100%;    
+            } 
+            /* fix img - not good */
+            &:first-child {
+                height: 200px;
+                overflow: hidden;
+                align-self: center;
+                padding-right: 15px;
+            }  
+        }
+        &__icons {
+            img {
+                width: 20%;
+            }
+        }    
+}
+    .food {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4,1fr);
+        }
+    }
+    .counter {
+        padding-top: 49px;
+        &__item {
+            font-size: 28px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        padding: 10px 5px 15px 5px;
+        min-height: 400px;
+        &__wrapper {
+            padding-top: 10px;
+        }
+        &__item {
+            margin-right: 0;
+            h3 {
+                font-size: 16px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+   .food {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5,1fr);
+            gap: 5px;
+        }
+    }
+    .app {
+        padding: 30px ;
+        &__item {
+            p {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            img {
+                width: 100%;    
+            } 
+            /* fix img - not good */
+            &:first-child {
+                height: 135px;
+                overflow: hidden;
+                align-self: center;
+                padding-right: 15px;
+            } 
+        }
+        &__icons {
+            img {
+                width: 30%;
+            }
+        }
+    }
+    .counter {
+        padding-top: 49px;
+        &__item {
+            font-size: 24px;
+            padding-left: 10px;
+        }
+    }
+    .footer {
+        min-height: auto;
+        padding: 20px 10px 20px 10px;
+    }
+    .review {
+        min-height: 300px;
+        padding:35px 5px;
+        &__text {
+            font-size: 18px;
+        }
+    }
+    .form {
+        padding: 25px 30px 30px 30px;
+        width: 300px;
+        min-height: 200px;
+        img {
+            display: none;
+        }
+        &__input {
+            margin-bottom: 8px;
+            & input {
+                width: 85%;
+                height: 15%;
+            }
+        }
+        & h4 {
+            font-size: 14px;
+            letter-spacing: 0.8px;
+        }
+        & span, a {
+            font-size: 12px;
+        }
+    }
+    .btn {
+        &_log {
+            width: 60%;
+            height: 30px;
+            h4 {
+                margin: 5px;
+            }
+        }
     }
 
+
+
+}
+@media (max-width: 576px) {
+    .header {
+        padding: 25px 15px 100px 0;
+        min-height: auto;
+        &__top {
+        margin-bottom: 50px;  
+        flex-direction: column;
+        }
+        h1 {
+            font-size: 42px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+    }
+    .btn {
+        &_header {
+            width: 170px;
+            height: 60px;
+            padding: 20px 0;
+        }
+    }
+
+    .about {
+        min-height: 600px;
+        &__wrapper {
+            padding: 15px;
+            flex-direction: column;
+
+        }
+        &__item {
+            padding-top: 0;
+            margin: 0;
+            width: 100%;
+            margin-bottom: 10px;
+
+
+            h3 {
+                font-size: 16px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .app {
+        min-height: 800px;
+        &__wrapper{
+            flex-direction: column;            
+            img {
+                width: 45%;
+            }
+        }
+        &__item{            
+            &:first-child {
+            display: none;
+            } 
+        }
+    }
+    .food {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6,1fr);
+            gap: 5px;
+        }
+    }
 }
