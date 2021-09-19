@@ -6,15 +6,17 @@
         height: 2px;
         background: #ffffff;
         cursor: pointer;
+        transition: all .6s;
+
     }
     &_active {
         span {
-        transform: rotate(-25deg);
+        transform: rotate(-180deg);
         margin-top: 5px;
         background: #ffffff;
         transition: all .6s;
         &:last-child {
-            transform: rotate(25deg);
+            transform: rotate(180deg);
         }
         &:nth-child(2){
         display: none;
